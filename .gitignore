@@ -1,0 +1,65 @@
+# R-specific files
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+
+# R package files
+*.Rcheck/
+*.Rproj
+*.Rproj.user
+
+# Environment-specific files
+.Renviron
+.Renviron.user
+
+# R Markdown files and their output
+*_cache/
+*.knit.md
+*.utf8.md
+*.pdf
+*.html
+
+# RStudio-specific files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.RDataTmp
+
+# R-related temporary files
+.RDataTmp
+
+# Data files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.rds
+
+# R package build artifacts
+src/*.so
+src/*.dll
+src/*.a
+src/*.o
+man/
+NAMESPACE
+
+# Other files and directories to ignore
+.Rproj.user/
+.cache/
+.packrat/
+.Renviron
+.Renviron.user
+*.log
+*.aux
+*.out
+*.toc
+*.blg
+*.bbl
+
+# Ignore any files in a .gitignore_global file (usually for global Git ignore rules)
+.gitignore_global
+
+# Ignore the entire "private" directory
+/private/
