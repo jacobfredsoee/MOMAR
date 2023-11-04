@@ -1,4 +1,5 @@
 ### Create a vector from 1 to n ###
+### Rank algorithms according to speed ###
 n = 10000
 
 
@@ -13,21 +14,19 @@ while(i <= n) {
 
 
 ### Algorithm 2 ###
-### Repeat and combine ###
-result = vector()
-i = 1
-repeat {
-  result = c(result, i)
-  i = i + 1
-  if(length(result) >= n) break
-}
+### Built-in function ###
+result = 1:n
 
 
 ### Algorithm 3 ###
-### sapply ###
-result = sapply(1:n, function(x) {
-  return(x) 
-})
+### Repeat and append ###
+result = vector()
+i = 1
+repeat {
+  result = append(result, i)
+  i = i + 1
+  if(length(result) >= n) break
+}
 
 
 ### Algorithm 4 ###
@@ -39,8 +38,10 @@ for(i in 1:n) {
 
 
 ### Algorithm 5 ###
-### Built-in function ###
-result = 1:n
+### sapply ###
+result = sapply(1:n, function(x) {
+  return(x) 
+})
 
 
 

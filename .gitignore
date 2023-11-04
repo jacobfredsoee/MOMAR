@@ -63,3 +63,6 @@ NAMESPACE
 
 # Ignore the entire "private" directory
 /private/
+
+# Ignore powerpoint temp files
+~$*
