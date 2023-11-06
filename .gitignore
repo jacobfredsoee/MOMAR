@@ -66,3 +66,7 @@ NAMESPACE
 
 # Ignore powerpoint temp files
 ~$*
+
+
+# Ignore tumbnail files
+Thumbs.db
