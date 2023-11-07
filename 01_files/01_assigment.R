@@ -39,7 +39,7 @@ for(i in 1:n) { #for each number between 1 and n, call the number i and do whate
 
 ### Algorithm 5 ###
 ### sapply ###
-result = sapply(1:n, function(x) { #for each number between 1 and n, call the anonymous function and call the number x
+result = sapply(1:n, function(x) { #for each number between 1 and n, call the anonymous function and return the number x
   return(x) 
 })
 
