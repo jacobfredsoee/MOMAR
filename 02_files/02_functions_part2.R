@@ -8,6 +8,10 @@ calculateBMI(183, 78); calculateBMI(1.83, 78)
 
 
 
+
+
+
+
 # Write a function that takes a vector as input, skips all even numbers and returns the sum of the odd numbers
 sumOfOdds = function(numbers) {
   # Your code here
@@ -19,6 +23,10 @@ sumOfOdds(c(1,2,3,4,5,6,7,8))
 
 
 
+
+
+
+
 # Write a function that takes a number as input, and returns "Positive" if above 0, "Negative" if below 0 and "Zero" if input is 0
 classifyNumber = function(x) {
   # Your code here
@@ -26,6 +34,12 @@ classifyNumber = function(x) {
 
 #Test, expected output: "Negative", "Zero", "Positive"
 classifyNumber(-8); classifyNumber(0); classifyNumber(42);
+
+
+
+
+
+
 
 
 

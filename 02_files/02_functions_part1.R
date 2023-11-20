@@ -12,6 +12,10 @@ calculateBMI(183, 78)
 
 
 
+
+
+
+
 # Write a function that takes a vector as input and returns a logical vector if a value is duplicated
 findDuplicates = function(v) {
   # Your code here
@@ -23,6 +27,11 @@ findDuplicates(c(1,2,3,4,5,6,7,1,5,9))
 
 
 
+
+
+
+
+
 # Write a function that takes a string as input and returns the string reversed
 reverseString = function(s) {
   # Your code here
@@ -30,6 +39,13 @@ reverseString = function(s) {
 
 #Test, expected output: "god yzal eht revo spmuj xof nworb kciuq eht"
 reverseString("the quick brown fox jumps over the lazy dog")
+
+
+
+
+
+
+
 
 
 
