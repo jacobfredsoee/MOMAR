@@ -94,6 +94,9 @@ analyses = data.frame(NPUcode = c("NPU18016", "NPU02319", "NPU03429", "NPU02593"
 
 
 LABKA = data.frame(PatientID = paste0("Patient", sample(1:nPatients, nPatients * 15, replace = TRUE))) %>% 
+  mutate(SampleDate = sapply(1:nrow(.), \(i) {
+    as.Date(sample(12000:15000, size = 1), origin = "1970-01-01")
+  })) %>% 
   cbind(lapply(1:nrow(.), \(i) {
     analyses[sample(1:nrow(analyses), 1),]
   }) %>% 
@@ -119,11 +122,13 @@ LABKA = data.frame(PatientID = paste0("Patient", sample(1:nPatients, nPatients *
     }
     
     pmax(pmin(rnorm(1, mean = avg, sd = dev), max), min) %>% round(1)
-  }))
+  })) %>% 
+  mutate(SampleDate = as.Date(SampleDate, origin = "1970-01-01"))
 
-write_rds(geneData, "02_files/geneData.rds")
-write_rds(LABKA, "02_files/LABKA.rds")
-write_rds(patientData, "02_files/patientData.rds")
+# write data to files
+# write_rds(geneData, "02_files/geneData.rds")
+# write_rds(LABKA, "02_files/LABKA.rds")
+# write_rds(patientData, "02_files/patientData.rds")
 
 rm(geneName, genes, i, nGenes, nPatients, generateGeneName, analyses)
 
