@@ -35,7 +35,6 @@
 *.tsv
 *.xls
 *.xlsx
-*.rds
 
 # R package build artifacts
 src/*.so
