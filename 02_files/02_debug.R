@@ -106,6 +106,7 @@ testMyFunction(myDivideFinal, 1000)
 # case study
 iris %>% 
   mutate(ratio = apply(., 1, \(r) {
+    browser()
     if(r["Species"] == "setosa") {
       r["Petal.Length"] / r["Petal.Width"]
     } else {
